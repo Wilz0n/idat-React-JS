@@ -1,0 +1,86 @@
+:root {
+    --body-color: #b12626;
+    --login-border: #fff;
+    --text-buttom: #1d1d1d;
+    --font-login: #1fc248;
+  }
+
+  html {
+    background-image: linear-gradient(to bottom, #2228be, #b32f26, #494b8d);
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100%;
+}
+
+.formulario{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    width: 350px;
+    height: 440px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.432);
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+.borde{
+    border: 1px solid #1a1919;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding: 13px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#nombre, #correo{
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    width: 19rem;
+    font-size: 18px;
+}
+
+select{
+    font-size: 18px;
+    margin-bottom: 5px;
+    width: 230px;
+}
+
+button{
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+input{
+    font-size: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 480px;
+}
+
+th{
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
