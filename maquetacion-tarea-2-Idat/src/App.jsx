@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Botones } from "./components/Botones/Botones";
+import { Card } from "./components/Card/Card";
+import { Carusel } from "./components/Carusel/Carusel";
+import { Iconos } from "./components/Icons/Icons";
+import { Navbar } from "./components/Navbar/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0)
+const items = [
+  { logo: "https://micras.org/wiki/images/8/81/Airport_icon.png", titulo: "Airport pickup"},
+  { logo: "https://static-00.iconduck.com/assets.00/camera-icon-1024x832-h0gkd0hw.png", titulo: "Easy booking"},
+  { logo: "https://i.pinimg.com/736x/47/c4/65/47c465c4b423a2c37c05d095798c94fc.jpg", titulo: "Best tour guide"},
+  { logo: "https://i.pinimg.com/736x/cd/f6/cc/cdf6cc86f61041b3afdcdfeaf91cb490.jpg", titulo: "Lots of promos"}
+];
 
+
+export const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Carusel message="Explore the sights of the Azores" paragraph="A place where nature and adventure unite" />
+      <Botones />
+      <Iconos items={items} />
+      <Card />
     </>
-  )
+  );
 }
-
-export default App

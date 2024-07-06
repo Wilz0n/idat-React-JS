@@ -1,0 +1,13 @@
+.boton{
+    position: absolute;
+    top: 43%;
+    left: 8%;
+    width: 200px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.boton:hover{
+    background-color: rgba(2, 0, 0, 0.521);
+    color: white;
+}

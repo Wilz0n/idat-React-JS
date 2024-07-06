@@ -1,0 +1,28 @@
+.XP{
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    height: 80%;
+    width: 93%;
+    border-radius: 30px;
+    opacity: 0.9;
+    
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.671);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    position: absolute;
+    top: 25.5%;
+    left: 7.1%;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.671);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
