@@ -8,7 +8,7 @@ export const Card = () => {
         <footer>
             <div className='row'>
                 <article className='articulo'>
-                    <img className='imagen' src='./img/mujer paisaje.png'></img>
+                    <img className='imagen' src='./img/mujer en campo.png'></img>
                     <h3>Alone with nature</h3>
                     <span className='person'>$100/person</span>
                     <button>→</button>
