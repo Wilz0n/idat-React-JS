@@ -1,3 +1,45 @@
-En tu proyecto usando React y TypeScript, deveras crear un array de objetos. Cada propiedad del objeto tendrá su propio tipo de dato, así mismo al menos deveras incluir 1 una propiedad que tengo objetos como mínimo 2. Cabe decir que el array de objetos es libre (Sobre cualquier tema)
+mport { useState } from 'react';
  
-No olvidar de crear un readme explicando lo que hizo en su pagina y adjuntar capturas de pantalla en el mismo archivo.
+export const Counter = () => {
+  const [valueCounter, setValueCounter] = useState(10);
+ 
+  const handleIncrement = () => {
+    setValueCounter(valueCounter + 1);
+  };
+ 
+  const handleDecrement = () => {
+    console.log('Hola desde handleDecrement');
+  };
+ 
+  console.log('Se renderizo el component');
+ 
+  return (
+    <section>
+      <header>
+        <h1>Counter Component - {valueCounter}</h1>
+      </header>
+ 
+      <button onClick={handleIncrement}>Incrementar</button>
+      <button onClick={handleDecrement}>Decrementar</button>
+ 
+      {valueCounter > 12 ? <p>Valor mayor a 12</p> : <p>Es menor a 12</p>}
+    </section>
+  );
+};
+ 
+ 
+ 
+ 
+// USESTATE
+// USEFFECT
+
+
+// 1. Agregar funcionalidad de decrementar de 1 en 1
+// 2. Agregar funcionalidad y UI para resetear el valor
+// 3. Si el value de counter es menor o igual a 0, bloquear el boton decrementar.
+
+/////////////////////////////
+
+// Limpiar campos de los inputs al momento de Agregar el usuario
+// Realizar iteracion de los usuarios (Pintar el nombre del usuario)
+// Componentizar lo mas atomico posible los componenets
