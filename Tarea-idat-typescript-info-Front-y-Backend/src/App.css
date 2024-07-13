@@ -1,3 +1,13 @@
+body{
+  background-image: url(https://img.freepik.com/vector-gratis/flujo-diseno-codigo-binario_53876-118375.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  padding: 0;
+  margin: 0;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -38,5 +48,48 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: white;
+}
+
+.App {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.developer-container {
+  display: flex;
+  gap: 20px; 
+}
+
+/* Estilos adicionales para el encabezado si es necesario */
+h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Estilos para las tarjetas de desarrollador */
+.card {
+  margin-right: 30px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  margin-bottom: 1.25rem;
 }
